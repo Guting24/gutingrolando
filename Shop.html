@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image" href="logo.png">
+	<title>AXE Shop</title>
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+</style>
+	<style>
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: century;
+}
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 60px;
+  font-size: 15px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  padding: 5px 23px;
+  transition: 0.5 ease;
+}
+ul li a:hover{
+  background-color: dimgray;
+  color: #000;
+}
+ul li.active a{
+  background-color: dimgray;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 145px;
+  height: auto;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  top: 46%;
+  left: 10%;
+  transform: translate(-50%,-50%);
+}
+.title h1{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+}
+</style>
+<style>
+.dropbtn {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none}
+</style>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+  .video{
+    align-items: center;
+  }
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+   #footer .copyright{
+    text-align: center;
+    float: left; 
+}
+</style>
+<style>
+  .container{
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.row .col-2 .h1{
+  font-family: 'Poppins', cursive;
+}
+
+
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+  font-family: 'Poppins', cursive;
+}
+
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: #563434;
+}
+
+.header{
+  background: radial-gradient(#fff #ffd6d6);
+}
+
+.header .row{
+  margin-top: 70px;
+}
+  .categories{
+  margin: 70px 0;
+}
+
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img{
+  width: 100%;
+}
+
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.p{
+  font-size: 15px;
+  margin: auto;
+}
+
+.h1{
+  font-size: 25px;
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<div class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png">
+      </div>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li class="active"><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+<div class="dropdown">
+  <button class="dropbtn">MORE</button>
+  <div class="dropdown-content">
+    <a href="signup.html">Sign up</a>
+    <a href="Popular.html">POPULAR</a>
+  </div>
+</div>
+      </ul>
+    </div>
+    </div>
+  
+  <div class="row">
+      <div class="col-2">
+        <h1>Axe Dodorant Shop</h1>
+      </div>
+            <div class="col-2">
+    <iframe src="axeads3.mp4" width="800px" height="420"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+  <h1 style="text-align:center">Axe Deodorant Bodyspray Scents For Men's</h1>
+  <div class="categories">
+  <div class="small-container">
+  <div class="row">
+    <div class="card">
+      <div class="col-3">
+  <img src="Axe1.webp" alt="Axe Deodorant Stick Dark Temptation 40g" style="width:100%">
+  <h1>Axe Deodorant Stick Dark Temptation 40g</h1>
+  <p class="price">₱244.00</p>
+  <p>Watsons Philippines/p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="card">
+  <div class="col-3">
+  <img src="axe2.webp" alt="Axe, Apollo, Deodorant, Sage & Cedawood Scents For Men" style="width:100%">
+  <h1>Axe Deodorant Sage & Cedawood Scents</h1>
+  <p class="price">₱249.20</p>
+  <p>iHerb</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+  <div class="card">
+    <div class="col-3">
+  <img src="axe3.webp" alt="Axe Deodorant Bodyspray Phoenix 4 Oz By Axe" style="width:100%">
+  <h1>Axe Deodorant Bodyspray Phoenix 4</h1>
+  <p class="price">₱391.04</p>
+  <p>HerbsPro.com</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div class="categories">
+  <div class="small-container">
+  <div class="row">
+    <div class="card">
+      <div class="col-3">
+  <img src="Axe4.webp" alt="Axe Dark Temptaition/Gold Temptation/ice" style="width:100%">
+  <h1>Axe Dark Temptaition/Gold/ice</h1>
+  <p class="price">₱165.0</p>
+  <p>Shopee</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="card">
+  <div class="col-3">
+  <img src="axe5.webp" alt="Axe Bodyspray Icebreaker 135ml" style="width:100%">
+  <h1>Axe Bodyspray Icebreaker</h1>
+  <p class="price">₱264.20</p>
+  <p>Watsons Philippines</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+  <div class="card">
+    <div class="col-3">
+  <img src="axe6.webp" alt="Axe Deodorant Bodyspray Essence 4 Oz By Axe" style="width:100%">
+  <h1>Axe Deodorant Bodyspray Essence 4</h1>
+  <p class="price">₱391.04 + tax</p>
+  <p>HerbsPro.com</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+  <h2>Design By: Rolando Guting Jr.</h2>
+    <div class="copyright">
+        &copy; Copyright <strong>AXE Shop</strong>.All Rights Reserved
+    </div>
+</div>
+</div>
+</body>
+</html>

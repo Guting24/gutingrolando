@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image" href="logo.png">
+	<title>AXE testimonials</title>
+	<style>
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 0px;
+  font-size: 15px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  padding: 5px 23px;
+  transition: 0.5 ease;
+}
+ul li a:hover{
+  background-color: dimgray;
+  color: #000;
+}
+ul li.active a{
+  background-color: dimgray;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 145px;
+  height: auto;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  top: 46%;
+  left: 10%;
+  transform: translate(-50%,-50%);
+}
+.title h1{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+}
+</style><style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 0px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 00px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 0px;
+   margin-top: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: dimgray;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  #footer .copyright{
+    text-align: center;
+    float: left; 
+}
+</style>
+<style>
+.dropbtn {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none}
+</style>
+<style>
+.container-fluid {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container-fluid::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-fluid img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container-fluid span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container-fluid {
+      text-align: center;
+  }
+  .container-fluid img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+	  <header>
+    <div class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png">
+      </div>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+<div class="dropdown">
+  <button class="dropbtn">MORE</button>
+  <div class="dropdown-content">
+    <a href="signup.html">Sign up</a>
+    <a href="Popular.html">POPULAR</a>
+  </div>
+</div>
+      </ul>
+    </div>
+    </div>
+<div class="header">
+  <h1>‎ </h1>
+</div>
+<h2>Responsive Testimonials</h2>
+
+<div class="container-fluid">
+  <img src="cris.jpg" alt="Avatar" style="width:90px">
+  <p><span>CHRIS</span></p>
+  <p>Hi, my name is Chris and I am the founder of Pinoy Guy Guide. As a guy living in Bonifacio Global City in Manila, Philippines, I have a strong interest in writing about men's fashion, lifestyle, pop culture and gear for guys.</p>
+</div>
+
+<div class="container-fluid">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> CEO at Company.</p>
+  <p>No one is better than John Doe.</p>
+</div>
+	<div class="footer">
+  <h2>Design By: Rolando Guting Jr.</h2>
+    <div class="copyright">
+        &copy; Copyright <strong>AXE Shop</strong>.All Rights Reserved
+    </div>
+</div>
+</div>
+</body>
+</html>

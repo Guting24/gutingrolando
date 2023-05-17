@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" type="image" href="logo.png">
+  <title>Axe Home</title>
+  <style>
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: century;
+}
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(findyourmagic.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 0px;
+  font-size: 15px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  padding: 5px 23px;
+  transition: 0.5 ease;
+}
+ul li a:hover{
+  background-color: dimgray;
+  color: #000;
+}
+ul li.active a{
+  background-color: dimgray;
+  color: #000;
+}
+.logo img{
+  float: left;
+  width: 145px;
+  height: auto;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+</style>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<style>
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+   #footer .copyright{
+    text-align: center;
+    float: left; 
+}
+/* footer */
+</style>
+<style>
+.dropbtn {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none}
+</style>
+<style>
+.top-navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.top-icons{
+    margin-left: 0px;
+}
+.top-icons i{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.other-links{
+    margin-right: 33px;
+}
+.other-links i{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid blue;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: Black;
+    color: black;
+    transition: 0.5s ease;
+}
+#btn-login a:hover{
+    background-color: blue;
+    color: black;
+}
+#btn-login:hover{
+    background-color: blue;
+    color: black;
+}
+#btn-signup{
+    width: 100px;
+    border: 2px solid blue;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: blue;
+    color: black;
+    transition: 0.5s ease;
+}
+#btn-signup a:hover{
+    background-color: blue;
+    color: black
+}
+#btn-signup:hover{
+    background-color: blue;
+    color: black;
+}
+@media screen and (max-width:500px){
+    .top-icons{
+        margin-left: 30px;
+    }
+    .top-icons i{
+        font-size: 15px;
+    }
+    .other-links i{
+        font-size: 15px;
+    }
+    #btn-login{
+        width: 60px;
+        height: 5vh;
+    }
+    #btn-signup{
+        width: 70px;
+        height: 5vh;
+    }
+}
+@media screen and (max-width:350px){
+    .top-icons{
+        margin-left: 10px;
+    }
+    .top-icons i{
+        font-size: 10px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links i{
+        font-size: 10px;
+    }
+    #btn-login{
+        width: 50px;
+        height: 5vh;
+        font-size: 13px;
+    }
+    #btn-signup{
+        width: 60px;
+        height: 5vh;
+        font-size: 13px;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+  <div class="navbar">
+  <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+  
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png">
+        
+      </div>
+      <ul>
+        <li class="active"><a href="Home.html">HOME</a></li>
+        <li><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+<div class="dropdown">
+  <button class="dropbtn">MORE</button>
+  <div class="dropdown-content">
+    <a href="signup.html">Sign up</a>
+    <a href="Popular.html">POPULAR</a>
+  </div>
+</div>
+      </ul>
+    </div>
+  </header>
+  <div class="c-rich-text-v2__wrapper">
+   <div class="c-rich-text-v2__description js-ct-linkclick">
+<h1 style="text-align: center;"><strong>LOVE IT</strong></h1>
+<p style="text-align: center;">“<em>THE SMELL OF LAVENDER IN THIS AXE SPRAY IS AMAZING. IT’S STRONG ENOUGH FOR YOU TO SMELL BUT NOT TOO STRONG AS TO OVERPOWER.<br> I USE IT ONCE IN THE MORNING AND THE SCENT LASTS ALL DAY.</em>”</p>
+<h1 style="text-align: center;"><strong>WOW</strong></h1>
+<p style="text-align: center;">“<em>WOW. THIS ISA FANTASTIC SCENT. IT WEARS LIKE A BODY SPRAY BUT PROTECTS LIKE A DEODORANT. IT IS A VERY SEXY SCENT.<br> I FEEL CONFIDENT THAT I’LL SMELL GOOD AND PROTECTED. I LOVE THIS ONE.</em>”</p>
+<h1 style="text-align: center;"><strong>YES</strong></h1>
+<p style="text-align: center;">“<em>OMG THIS AXE FINE FRAGRANCE DEODORANT BODY SPRAY 72H PROTECTION AQUA BERGAMOT SMELLS AMAZING, I WOULD NEVER PUT IT<br> PASSED AXE, THEY ALWAYS COME OUT WITH THE BEST SCENTS THAT I HAVE EVER KNOWN FOR A WOMAN OR FOR A MAN, I LOVE<br> IT WHEN MY MAN WALKS PAST ME. ALL I CAN SAY IS OMG.</em>”</p>
+</div>
+</div>
+<br>
+<br>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="popular1.jpg" style="width:100%">
+  <div class="text"><h2 style="text-align: center;">OVER 750 ⭐⭐⭐⭐⭐ REVIEWS</h2></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="popular2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="popular3.jpg" style="width:100%">
+  <div class="text">Find Your Magic</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="footer">
+  <h2>Design By: Rolando Guting Jr.</h2>
+    <div class="copyright">
+        &copy; Copyright <strong>AXE Shop</strong>.All Rights Reserved
+    </div>
+</div>
+</div>
+</body>
+</html>

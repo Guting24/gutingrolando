@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image" href="logo.png">
+<title>AXE Contact Us</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+  /* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+   #footer .copyright{
+    text-align: center;
+    float: left; 
+}
+</style>
+<style>
+.dropbtn {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none}
+header{
+  background-color: skyblue;
+  height: 12vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 0px;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 0px;
+  margin-right: 60px;
+  font-size: 15px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  padding: 5px 23px;
+  transition: 0.5 ease;
+}
+ul li a:hover{
+  background-color: dimgray;
+  color: #000;
+}
+ul li.active a{
+  background-color: dimgray;
+  color: #000;
+}
+h3{
+  text-align: center;
+}
+.logo img{
+  float: left;
+  width: 145px;
+  height: auto;
+}
+p{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.png">
+      </div>
+  <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Shop.html">SHOP</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li class="active"><a href="Contact.html">CONTACT US</a></li>
+<div class="dropdown">
+  <button class="dropbtn">MORE</button>
+  <div class="dropdown-content">
+    <a href="signup.html">Sign up</a>
+    <a href="Popular.html">POPULAR</a>
+  </div>
+</div>
+      </ul>
+    </header>
+
+<h3>Contact Us</h3>
+<p>Do you have any questions?Please do not hesitate to contact us directly. Ourr team will come back to you within a matter of hours to help you. </p>
+
+<div class="container">
+  <form action="Shop.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="philippines">Philippines</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=900&amp;height=512&amp;hl=en&amp;q=San Nicolas Pangasinan Philippines&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Template</a></div><style>.mapouter{position:relative;text-align:right;width:900px;height:512px;}.gmap_canvas {overflow:hidden;background:none!important;width:900px;height:512px;}.gmap_iframe {width:900px!important;height:512px!important;}</style></div>
+  <div class="footer">
+    <h2>Location:</h2><p>Sitio Cabaruan, Sta. Maria West, San Nicolas, Pangasinan</p>
+    <h2>Follow Us:</h2>
+    <p>Facebook, Twitter, Telagram</p>
+    <h2>Email:</h2><p>gutingrolando@gmail.com</p>
+    <h2>Phone Number:</h2><p>+639279300531</p>
+  <h1>Design By: Rolando Guting Jr.</h1>
+    <div class="copyright">
+        &copy; Copyright <strong>AXE Shop</strong>.All Rights Reserved
+    </div>
+</div>
+</div>
+</body>
+</html>
